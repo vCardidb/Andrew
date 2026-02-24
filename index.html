@@ -37,15 +37,15 @@
             padding: 20px;
             background: #f5f8fc;
             border-radius: 16px;
-            min-height: 200px;
+            min-height: 250px;  /* Mehr Platz für 300% Zoom */
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow: hidden;
+            overflow: hidden;    /* Verhindert Abschneiden */
         }
         
         .logo-container img {
-            transform: scale(2.0);  /* 200% Zoom */
+            transform: scale(3.0);  /* 300% Zoom */
             max-width: 100%;
             max-height: 100%;
             width: auto;
@@ -193,10 +193,10 @@
                 font-size: 1.2rem;
             }
             .logo-container {
-                min-height: 180px;
+                min-height: 220px;
             }
             .logo-container img {
-                transform: scale(1.8);  /* 180% auf mobil */
+                transform: scale(2.5);  /* 250% auf mobil */
             }
         }
     </style>
@@ -204,7 +204,7 @@
 <body>
     <div class="card">
         <div class="logo-container">
-            <!-- Logo wird auf 200% gezoomt und bleibt zentriert -->
+            <!-- Logo mit 300% Zoom -->
             <img src="levata-logo.jpg" alt="Levata" onerror="this.style.display='none'; document.getElementById('fallback-logo').style.display='block';">
             
             <!-- Fallback falls Logo nicht geladen werden kann -->
